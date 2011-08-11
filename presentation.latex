@@ -43,7 +43,7 @@ def hello\_world():\\
 \hspace*{1.5cm}return 'Hello World!'\\
 
 if \_\_name\_\_ == '\_\_main\_\_':\\
-\hspace*{1.5cm}app.run()\\
+\hspace*{1.5cm}app.run(host='0.0.0.0')\\
 }
 \end{slide}
 \begin{slide}{Why Use Flask}
