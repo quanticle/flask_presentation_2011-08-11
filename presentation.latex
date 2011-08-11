@@ -10,7 +10,7 @@
 \begin{slide}{What is a microframework}
 
   \begin{itemize}
-    \item Small framework (duh!) form small applications
+    \item Small framework (duh!) for small applications
     \item Make small applications easy; make large applications possible
     \begin{itemize}
         \item In principle, small applications can be fit into a single file
@@ -33,5 +33,45 @@
   \end{itemize}
 \end{slide}
 
-\end{document}
+\begin{slide}{How Easy Is Flask?}
+\section*{This Easy:}
+{\ttfamily
+from flask import Flask\\
+app = Flask(\_\_name\_\_)\\
+@app.route('/')\\
+def hello\_world():\\
+\hspace*{1.5cm}return 'Hello World!'\\
 
+if \_\_name\_\_ == '\_\_main\_\_':\\
+\hspace*{1.5cm}app.run()\\
+}
+\end{slide}
+\begin{slide}{Why Use Flask}
+
+  \begin{itemize}
+    \item You need to get something going {\em fast}
+    \item Simple applications
+    \begin{itemize}
+      \item Not everything needs an ORM
+      \item Not everything needs automatic admin pages
+    \end{itemize}
+    \item ``Nonstandard'' applications
+    \begin{itemize}
+      \item Your data doesn't fit into the models provided by existing web frameworks
+      \item You're building a web wrapper over an existing application
+    \end{itemize}
+    \item You want finer control over your URLs 
+  \end{itemize}
+
+\end{slide}
+
+
+\begin{slide}{Why Not Use Flask}
+
+  \begin{itemize}
+    \item You have a lot of CRUD objects 
+    \item You want reusable apps
+  \end{itemize}
+\end{slide}
+
+\end{document}
