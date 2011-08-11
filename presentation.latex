@@ -1,0 +1,37 @@
+\documentclass{prosper}
+\title{Flask}
+\subtitle{A Python Web Microframework}
+\author{Rohit Patnaik}
+
+\begin{document}
+
+\maketitle
+
+\begin{slide}{What is a microframework}
+
+  \begin{itemize}
+    \item Small framework (duh!) form small applications
+    \item Make small applications easy; make large applications possible
+    \begin{itemize}
+        \item In principle, small applications can be fit into a single file
+        \item Contrast with Django, CherryPy, etc, which require multiple files
+    \end{itemize}
+    \item No DB abstractions 
+    \item No Templating (sometimes)
+    \item No form validation
+  \end{itemize}
+
+\end{slide}
+
+\begin{slide}{What is Flask}
+ 
+  \begin{itemize}
+    \item Flask is a microframework that's designed to be quick and easy to set up and use
+    \item Flask includes templating (Jinja2), but you're free to bring your own template engine
+    \item Makes REST-ful URL dispatching easy
+    \item Makes unit testing easy
+  \end{itemize}
+\end{slide}
+
+\end{document}
+
